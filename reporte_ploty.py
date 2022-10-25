@@ -5,7 +5,7 @@ from dash import Dash, dcc, html, dash_table
 
 
 # Creamos la conexion
-sql_schema = "postgresql://postgres:123456@192.168.100.47/videocentro"
+sql_schema = "postgresql:///videocentro"
 engine = create_engine(sql_schema)
 inspector = inspect(engine)
 # print(inspector.get_table_names())
